@@ -28,8 +28,29 @@ Step 10 - git push --set-upstream origin master
 
 This all was done from master branch.
 Now need to create a develop branch and keep using the same.
----------------------------
+
+---------------------------------------------------------------------
+
+Below steps are for how did I setup the remote and local "develop" branch
+P.S : Till now I didn't have 'develop' branch either on remote or on local
 
 Step 1 - git checkout -b develop
+
+Step 2 - Modified the README.md file
+
+Step 3 - git add --all
+
+Step 4 - git commit -m "modified READEM.md" -> commited by amit.agrawal@hilabs.com as previously
+
+Step 5 - git push
+
+Step 6 - git push --set-upstream origin develop -> once this got executed, 
+        it created a PR link - https://github.com/AgrawalAmitCode/Namaste-React/pull/new/develop
+
+Step 7 - Then on the above link, PR was created and merged.
+
+Step 8 - Now when see on this repository, there are 2 repositories 'master' and 'develop'. :) 
+
+
 
 
