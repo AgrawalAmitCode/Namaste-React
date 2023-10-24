@@ -49,7 +49,7 @@ Step 6 - git push --set-upstream origin develop -> once this got executed,
 
 Step 7 - Then on the above link, PR was created and merged.
 
-Step 8 - Now when see on this repository, there are 2 repositories 'master' and 'develop'. :)
+Step 8 - Now when see on this repository, there are 2 repositories 'master' and 'develop'. :) 
 
 
 
