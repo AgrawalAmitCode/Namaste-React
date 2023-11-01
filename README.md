@@ -54,3 +54,21 @@ Step 8 - Now when see on this repository, there are 2 repositories 'master' and 
 
 
 
+# Parcel
+- Dev Build
+- Local Server
+- HMR = Hot Module Replacement
+- File Watching Algorithm -  written in C++
+- Caching - Faster builds - in .parcel-cache
+- Image Optimization
+- Minification
+- Bundling
+- Compressing
+- Consistent hashing
+- Code Splitting
+- Differential Bundling - support for older browsers
+- Diagnostic
+- Error Handling
+- HTTPs
+- Tree Shaking - remove unused code for you
+
