@@ -1,4 +1,6 @@
 import './index.css'
+// import './constants.js'
+import { IMG_CDN_URL, restaurantList } from './constants.js'
 
 /**
  * #### FoodAppComponent will have all these components ####
@@ -40,20 +42,22 @@ const Header = () => {
 }
 
 const RestaurantCard = (props) => {
-    const {resName, cuisine } = props
+    const {resData } = props
+    const {name, cuisines, cloudinaryImageId, avgRating, deliveryTime, costForTwo } = resData?.data;
+
     return (
         <div className='restaurant-card'>
             {/* below res-image can be removed and direct img tag can be used no issue */}
             <div className='res-image-container'>
-                <img alt="res-image" className='res-image' src='https://imgmedia.lbb.in/media/2019/05/5cd0227cf714cd30f8bfc2a9_1557144188503.jpg'/>
+                <img alt="res-image" className='res-image' src={IMG_CDN_URL + cloudinaryImageId }/>
             </div>
             <div className='res-details'>
-                <h3 className='res-heading'>{resName}</h3>
-                <span className='res-cuisine'>{cuisine}</span>
+                <h3 className='res-heading'>{name}</h3>
+                <span className='res-cuisine'>{cuisines.join(', ')}</span>
                 <div className='res-raiting-min-cost'>
-                    <span>4.4</span>
-                    <span>38 min</span>
-                    <span>500 for two</span>
+                    <span>{avgRating}</span>
+                    <span>{deliveryTime} min</span>
+                    <span>{costForTwo/100} for two</span>
                 </div>
             </div>
         </div>
@@ -67,24 +71,9 @@ const Body = () => {
                 Search
             </div>
             <div className='restaurant-container'>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Aroma Hyderabad House" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
-                <RestaurantCard resName="Meghna Foods" cuisine="Biryani, South-indian, North-indian, Chinese, SeaFood"/>
+                {restaurantList.map((resObj) => (
+                   <RestaurantCard key={resObj.data.id} resData={resObj}/>
+                ))}
             </div>
         </div>
     )
