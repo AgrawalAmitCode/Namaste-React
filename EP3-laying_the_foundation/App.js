@@ -1,5 +1,6 @@
 import React from "react"
 import ReactDOM from "react-dom/client";
+import { HeaderCoomponentAssignment } from "./HeaderComponentAssignment";
 
 // Firstly creating the root element which is basially getting the root <div> from our index.html
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -38,5 +39,10 @@ const Heading = () => (
 )
 
 root.render(<Heading/>)
+
+
+// -------------- Assignment changes in App.js
+
+root.render(<HeaderCoomponentAssignment/>)
 
 
