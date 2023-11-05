@@ -4,7 +4,9 @@
   "description": "This is Namaste React",
   "main": "index.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "start": "parcel ./EP3-laying_the_foundation/index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
