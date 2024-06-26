@@ -7,6 +7,397 @@ export const FETCH_MENU_URL =
 export const APP_LOGO_CDN_URL =
 	"https://dynamic.brandcrowd.com/asset/logo/7f982a19-779d-4dd3-b533-7a9f66474000/logo-search-grid-1x?logoTemplateVersion=1&v=637810055012670000&text=Burgerlicious";
 
+export const newRestaurantList = [
+	{
+		info: {
+			id: "281469",
+			name: "Lavonne",
+			cloudinaryImageId: "emlehbuwgsmryxhwzhvq",
+			locality: "St. Marks Road",
+			areaName: "St. Marks Road",
+			costForTwo: "₹750 for two",
+			cuisines: ["Bakery", "Desserts"],
+			avgRating: 4.6,
+			feeDetails: {
+				restaurantId: "281469",
+				fees: [
+					{
+						name: "BASE_DISTANCE",
+						fee: 3800,
+					},
+					{
+						name: "BASE_TIME",
+					},
+					{
+						name: "ANCILLARY_SURGE_FEE",
+					},
+				],
+				totalFee: 3800,
+			},
+			parentId: "10530",
+			avgRatingString: "4.6",
+			totalRatingsString: "1K+",
+			sla: {
+				deliveryTime: 24,
+				lastMileTravel: 2.2,
+				serviceability: "SERVICEABLE",
+				slaString: "24 mins",
+				lastMileTravelString: "2.2 km",
+				iconType: "ICON_TYPE_EMPTY",
+			},
+			availability: {
+				nextCloseTime: "2023-12-07 22:40:00",
+				opened: true,
+			},
+			badges: {
+				imageBadges: [
+					{
+						imageId: "newg.png",
+						description: "Gourmet",
+					},
+				],
+				textExtendedBadges: [
+					{
+						iconId: "guiltfree/GF_Logo_android_3x",
+						shortDescription: "options available",
+						fontColor: "#7E808C",
+					},
+				],
+			},
+			isOpen: true,
+			aggregatedDiscountInfoV2: {},
+			type: "F",
+			badgesV2: {
+				entityBadges: {
+					imageBased: {
+						badgeObject: [
+							{
+								attributes: {
+									description: "Gourmet",
+									imageId: "newg.png",
+								},
+							},
+						],
+					},
+					textBased: {},
+					textExtendedBadges: {
+						badgeObject: [
+							{
+								attributes: {
+									description: "",
+									fontColor: "#7E808C",
+									iconId: "guiltfree/GF_Logo_android_3x",
+									shortDescription: "options available",
+								},
+							},
+						],
+					},
+				},
+			},
+			differentiatedUi: {
+				displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+				differentiatedUiMediaDetails: {
+					mediaType: "ADS_MEDIA_ENUM_IMAGE",
+					lottie: {},
+					video: {},
+				},
+			},
+			reviewsSummary: {},
+			displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+			restaurantOfferPresentationInfo: {},
+		},
+		analytics: {},
+		cta: {
+			link: "https://www.swiggy.com/restaurants/lavonne-st-marks-road-bangalore-281469",
+			type: "WEBLINK",
+		},
+	},
+	{
+		info: {
+			id: "30903",
+			name: "Sannidhi Grand",
+			cloudinaryImageId: "glun7fhhutgl0lkgekso",
+			locality: "Yadhav layout",
+			areaName: "Kammanahalli",
+			costForTwo: "₹150 for two",
+			cuisines: ["South Indian", "North Indian", "Chinese", "Beverages"],
+			avgRating: 4.2,
+			veg: true,
+			feeDetails: {
+				restaurantId: "30903",
+				fees: [
+					{
+						name: "BASE_DISTANCE",
+						fee: 6100,
+					},
+					{
+						name: "BASE_TIME",
+					},
+					{
+						name: "ANCILLARY_SURGE_FEE",
+					},
+				],
+				totalFee: 6100,
+			},
+			parentId: "21007",
+			avgRatingString: "4.2",
+			totalRatingsString: "10K+",
+			sla: {
+				deliveryTime: 36,
+				lastMileTravel: 7.6,
+				serviceability: "SERVICEABLE",
+				slaString: "36 mins",
+				lastMileTravelString: "7.6 km",
+				iconType: "ICON_TYPE_EMPTY",
+			},
+			availability: {
+				nextCloseTime: "2023-12-07 22:20:00",
+				opened: true,
+			},
+			badges: {
+				imageBadges: [
+					{
+						imageId: "v1695133679/badges/Pure_Veg111.png",
+						description: "pureveg",
+					},
+				],
+			},
+			isOpen: true,
+			type: "F",
+			badgesV2: {
+				entityBadges: {
+					imageBased: {
+						badgeObject: [
+							{
+								attributes: {
+									description: "pureveg",
+									imageId: "v1695133679/badges/Pure_Veg111.png",
+								},
+							},
+						],
+					},
+					textBased: {},
+					textExtendedBadges: {},
+				},
+			},
+			aggregatedDiscountInfoV3: {
+				header: "₹125 OFF",
+				subHeader: "ABOVE ₹599",
+				discountTag: "FLAT DEAL",
+			},
+			differentiatedUi: {
+				displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+				differentiatedUiMediaDetails: {
+					mediaType: "ADS_MEDIA_ENUM_IMAGE",
+					lottie: {},
+					video: {},
+				},
+			},
+			reviewsSummary: {},
+			displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+			restaurantOfferPresentationInfo: {},
+		},
+		analytics: {},
+		cta: {
+			link: "https://www.swiggy.com/restaurants/sannidhi-grand-yadhav-layout-kammanahalli-bangalore-30903",
+			type: "WEBLINK",
+		},
+	},
+	{
+		info: {
+			id: "51835",
+			name: "Aubree",
+			cloudinaryImageId: "4aa623f20487868aa84afbc858da17d6",
+			locality: "Timmaiah Road",
+			areaName: "Shivajinagar",
+			costForTwo: "₹700 for two",
+			cuisines: ["Desserts", "Bakery"],
+			avgRating: 4.4,
+			veg: true,
+			feeDetails: {
+				restaurantId: "51835",
+				fees: [
+					{
+						name: "BASE_DISTANCE",
+						fee: 3800,
+					},
+					{
+						name: "BASE_TIME",
+					},
+					{
+						name: "ANCILLARY_SURGE_FEE",
+					},
+				],
+				totalFee: 3800,
+			},
+			parentId: "3807",
+			avgRatingString: "4.4",
+			totalRatingsString: "1K+",
+			sla: {
+				deliveryTime: 31,
+				lastMileTravel: 2.8,
+				serviceability: "SERVICEABLE",
+				slaString: "31 mins",
+				lastMileTravelString: "2.8 km",
+				iconType: "ICON_TYPE_EMPTY",
+			},
+			availability: {
+				nextCloseTime: "2023-12-07 21:00:00",
+				opened: true,
+			},
+			badges: {
+				imageBadges: [
+					{
+						imageId: "newg.png",
+						description: "Gourmet",
+					},
+				],
+			},
+			isOpen: true,
+			type: "D",
+			badgesV2: {
+				entityBadges: {
+					imageBased: {
+						badgeObject: [
+							{
+								attributes: {
+									description: "Gourmet",
+									imageId: "newg.png",
+								},
+							},
+						],
+					},
+					textBased: {},
+					textExtendedBadges: {},
+				},
+			},
+			aggregatedDiscountInfoV3: {
+				header: "30% OFF",
+				subHeader: "UPTO ₹75",
+			},
+			differentiatedUi: {
+				displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+				differentiatedUiMediaDetails: {
+					mediaType: "ADS_MEDIA_ENUM_IMAGE",
+					lottie: {},
+					video: {},
+				},
+			},
+			reviewsSummary: {},
+			displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+			restaurantOfferPresentationInfo: {},
+		},
+		analytics: {},
+		cta: {
+			link: "https://www.swiggy.com/restaurants/aubree-timmaiah-road-shivajinagar-bangalore-51835",
+			type: "WEBLINK",
+		},
+	},
+	{
+		info: {
+			id: "217505",
+			name: "Chaayos Chai+Snacks=Relax",
+			cloudinaryImageId: "cace805a6ba74137571d0f7ac92302b1",
+			locality: "Appareddy Palya",
+			areaName: "Indiranagar",
+			costForTwo: "₹250 for two",
+			cuisines: [
+				"Bakery",
+				"Beverages",
+				"Chaat",
+				"Desserts",
+				"Home Food",
+				"Italian",
+				"Maharashtrian",
+				"Snacks",
+				"Street Food",
+				"Sweets",
+			],
+			avgRating: 4.3,
+			feeDetails: {
+				restaurantId: "217505",
+				fees: [
+					{
+						name: "BASE_DISTANCE",
+						fee: 5500,
+					},
+					{
+						name: "BASE_TIME",
+					},
+					{
+						name: "ANCILLARY_SURGE_FEE",
+					},
+				],
+				totalFee: 5500,
+			},
+			parentId: "281782",
+			avgRatingString: "4.3",
+			totalRatingsString: "10K+",
+			sla: {
+				deliveryTime: 35,
+				lastMileTravel: 6.6,
+				serviceability: "SERVICEABLE",
+				slaString: "35 mins",
+				lastMileTravelString: "6.6 km",
+				iconType: "ICON_TYPE_EMPTY",
+			},
+			availability: {
+				nextCloseTime: "2023-12-08 02:00:00",
+				opened: true,
+			},
+			badges: {
+				textExtendedBadges: [
+					{
+						iconId: "guiltfree/GF_Logo_android_3x",
+						shortDescription: "options available",
+						fontColor: "#7E808C",
+					},
+				],
+			},
+			isOpen: true,
+			type: "F",
+			badgesV2: {
+				entityBadges: {
+					imageBased: {},
+					textBased: {},
+					textExtendedBadges: {
+						badgeObject: [
+							{
+								attributes: {
+									description: "",
+									fontColor: "#7E808C",
+									iconId: "guiltfree/GF_Logo_android_3x",
+									shortDescription: "options available",
+								},
+							},
+						],
+					},
+				},
+			},
+			aggregatedDiscountInfoV3: {
+				header: "ITEMS",
+				subHeader: "AT ₹129",
+			},
+			differentiatedUi: {
+				displayType: "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+				differentiatedUiMediaDetails: {
+					mediaType: "ADS_MEDIA_ENUM_IMAGE",
+					lottie: {},
+					video: {},
+				},
+			},
+			reviewsSummary: {},
+			displayType: "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+			restaurantOfferPresentationInfo: {},
+		},
+		analytics: {},
+		cta: {
+			link: "https://www.swiggy.com/restaurants/chaayos-chai-snacks-relax-appareddy-palya-indiranagar-bangalore-217505",
+			type: "WEBLINK",
+		},
+	},
+];
+
 export const restaurantList = [
 	{
 		type: "restaurant",
